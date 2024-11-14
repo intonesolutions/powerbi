@@ -27,13 +27,22 @@
       "name": "76542031ef91666b9f71",
       "visualContainers": [
         {
-          "config": "{\"name\":\"12d876d782a6cc28e34f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":53.516474312802565,\"z\":0,\"width\":920.7578016382184,\"height\":627.1033015628403,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(Transactions.amount)\"}],\"Series\":[{\"queryRef\":\"Transactions.name\"}],\"Category\":[{\"queryRef\":\"Transactions.description\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Transactions\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"amount\"}},\"Function\":0},\"Name\":\"Sum(Transactions.amount)\",\"NativeReferenceName\":\"amount\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"name\"},\"Name\":\"Transactions.name\",\"NativeReferenceName\":\"name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"description\"},\"Name\":\"Transactions.description\",\"NativeReferenceName\":\"description\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"amount\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"12d876d782a6cc28e34f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":53.516474312802565,\"z\":0,\"width\":824.7025913331883,\"height\":627.1033015628403,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineClusteredColumnComboChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Transactions.description\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Transactions.amount)\"}],\"Series\":[{\"queryRef\":\"Transactions.name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Transactions\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"description\"},\"Name\":\"Transactions.description\",\"NativeReferenceName\":\"description\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"amount\"}},\"Function\":0},\"Name\":\"Sum(Transactions.amount)\",\"NativeReferenceName\":\"amount\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"name\"},\"Name\":\"Transactions.name\",\"NativeReferenceName\":\"name\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"amount\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
           "height": 627.10,
-          "width": 920.76,
+          "width": 824.70,
           "x": 0.00,
           "y": 53.52,
           "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"30233e6d010eb5d56c59\",\"layouts\":[{\"id\":0,\"position\":{\"x\":853.5191544246973,\"y\":53.516474312802565,\"z\":1,\"width\":426.75957721234863,\"height\":627.1033015628403,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Transactions.description\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Transactions.amount)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Transactions\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"description\"},\"Name\":\"Transactions.description\",\"NativeReferenceName\":\"description\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"amount\"}},\"Function\":0},\"Name\":\"Sum(Transactions.amount)\",\"NativeReferenceName\":\"Sum of amount\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"amount\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 627.10,
+          "width": 426.76,
+          "x": 853.52,
+          "y": 53.52,
+          "z": 1.00
         }
       ],
       "width": 1280.00
